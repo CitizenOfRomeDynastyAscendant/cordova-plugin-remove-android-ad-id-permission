@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-remove-android-write-external-storage-permission" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+<name>RemoveWriteExternalStoragePermission</name>
+
+<platform name="android">
+
+  <!-- HACK must use file="app/src/main/AndroidManifest.xml" otherwise cordova thinks this is a confict (... but with adding permissions via config-files directives ... probably a BUG in cordova-common) -->
+  <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest" mode="merge">
+    <manifest xmlns:tools="http://schemas.android.com/tools" />
+  </edit-config>
+
+  <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
+  </config-file>
+
+</platform>
+
+</plugin>
