@@ -22,14 +22,11 @@ module.exports = function (context) {
         manifestRoot['uses-permission'] = [];
       }
 
-      var permission = manifestRoot['uses-permission'].find(function(item) {
-        return item['$']['android:name'] === 'android.permission.WRITE_EXTERNAL_STORAGE';
+      manifestRoot['uses-permission'] = manifestRoot['uses-permission'].filter(function(item) {
+        return item['$']['android:name'] !== 'android.permission.WRITE_EXTERNAL_STORAGE';
       });
-
-      if(permission) {
-        permission['$']['tools:node'] = 'replace';
-        fs.writeFileSync(manifestPath, builder.buildObject(manifest));
-      }
+      
+      fs.writeFileSync(manifestPath, builder.buildObject(manifest));
     });
   }
 };
