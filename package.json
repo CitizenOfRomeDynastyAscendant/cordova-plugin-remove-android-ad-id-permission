@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-remove-android-write-external-storage-permission",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cordova/PhoneGap plugin for removing the write external storage permission for android",
   "cordova": {
     "id": "cordova-plugin-remove-android-write-external-storage-permission",
