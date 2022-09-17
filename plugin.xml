@@ -12,6 +12,8 @@
   <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
   </config-file>
+  
+  <hook src="hook.js" type="after_prepare" />
 
 </platform>
 
