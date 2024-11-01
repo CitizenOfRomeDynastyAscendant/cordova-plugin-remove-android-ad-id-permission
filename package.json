@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-remove-android-write-external-storage-permission",
-  "version": "0.0.4",
-  "description": "Cordova/PhoneGap plugin for removing the write external storage permission for android",
+  "name": "cordova-plugin-remove-android-ad-id-permission",
+  "version": "1.0.0",
+  "description": "Cordova/PhoneGap plugin for removing the AD_ID permission for android",
   "cordova": {
-    "id": "cordova-plugin-remove-android-write-external-storage-permission",
+    "id": "cordova-plugin-remove-android-ad-id-permission",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-write-external-storage-permission.git"
+    "url": "git+https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-ad-id-permission.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -19,7 +19,7 @@
   "author": "russaa",
   "license": "Unknown",
   "bugs": {
-    "url": "https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-write-external-storage-permission/issues"
+    "url": "https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-ad-id-permission/issues"
   },
-  "homepage": "https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-write-external-storage-permission"
+  "homepage": "https://github.com/CitizenOfRomeDynastyAscendant/cordova-plugin-remove-android-ad-id-permission"
 }

@@ -23,7 +23,7 @@ module.exports = function (context) {
       }
 
       manifestRoot['uses-permission'] = manifestRoot['uses-permission'].filter(function(item) {
-        return item['$']['android:name'] !== 'android.permission.WRITE_EXTERNAL_STORAGE';
+        return item['$']['android:name'] !== 'com.google.android.gms.permission.AD_ID';
       });
       
       fs.writeFileSync(manifestPath, builder.buildObject(manifest));
